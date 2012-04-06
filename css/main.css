@@ -1,0 +1,232 @@
+body {
+	color: black;
+	font-family: "Helvetica Neue", Arial, Verdana, sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	width: 790px;
+	margin: 20px auto;
+	background-color: orange;
+	border: 1px solid black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+	
+h1 { 
+	text-indent: -99999px
+}
+
+h2 {
+	font-family: 'Lobster Two', cursive;
+	font-size: 25px;
+}
+
+h3 {
+	font-family: 'Lobster Two', cursive;
+	font-size: 20px;
+}
+
+header {
+	background: white;
+	height: 114px;
+}
+
+header img {
+	float: left;
+}
+
+nav {
+	padding-top: 20px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 15px;
+	padding: 8px;
+	overflow: hidden;
+}
+
+nav li {
+	float: right;
+	margin: 5px;
+}
+
+nav a {
+	display: block;
+	background: #55e3f8;
+	color: black;
+	height: 20px;
+	width: 120px;
+	padding: 5px;
+	text-decoration: none;
+	text-align: center;
+	border-bottom: 2px solid black;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+nav a:visited {
+	background: #55e3f8;
+	color: black;
+}
+
+nav a:hover {
+	background: orange;
+	color: white;
+}
+
+nav a:active {
+	background: #e7fcfe;
+	color: black;
+}
+
+#intro {
+	float: left;
+	background: #fff6e5;
+	padding: 40px 15px;
+	border-top: 1px solid black;
+}
+
+
+#intro img {
+	float: right;
+}
+
+#history {
+	background-image: url(../images/gradientbg.jpg);
+	float: right;
+	padding: 15px;
+	clear: right;
+	float: right;
+	width: 513px;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+}
+
+aside {
+	background: white;
+	float: left;
+	padding: 15px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	height: 505px;
+	width: 216px;
+}
+
+aside ul {
+	border: 1px dashed #666;
+	list-style-type: none;
+	padding: 2px 5px;
+	margin: 20px auto;
+	overflow: hidden;
+	width: 95px;
+	height: 390px;
+}
+
+aside li {
+	margin: 7px 0px;
+
+}
+
+aside a {
+	border: 5px solid orange;
+	display: block;
+}
+
+aside a:hover {
+	border: 5px solid #1cd6e5;
+}
+
+aside a:active {
+	border: 5px solid black;
+}
+
+#health {
+	background: #e7fcfe;
+	padding: 15px;
+	float: right;
+	width: 513px;
+	height: 265px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+article {
+	background: white; opacity: .9;
+	clear: both;
+	padding: 15px;
+	-moz-column-count: 3;
+	height: 300px;
+}
+
+article h3 {
+	text-shadow: 3px 2px #dbdddc;
+}
+
+#date {
+	font-family: courier, monotype;
+}
+
+#author {
+	text-align: right;
+	font-weight: bold;
+}
+
+footer {
+	padding: 5px;
+	background: #e7fcfe;
+	border-top: 1px solid black;
+}
+
+footer p {
+	text-align: center;
+}
+
+
+
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+
+.orange {
+	color: #fef4e9;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+.orange:hover {
+	background: #f47c20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.orange:active {
+	color: #fcd3a5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a'); 
