@@ -1,12 +1,18 @@
 body {
 	color: black;
-	font-family: "Helvetica Neue", Arial, Verdana, sans-serif;
-	font-size: 12px;
-	line-height: 1.5;
-	width: 790px;
+	font: 100%/1.5 "Helvetica Neue", Arial, Verdana, sans-serif;
+	max-width: 790px;
 	margin: 20px auto;
 	background-color: orange;
 	border: 1px solid black;
+}
+
+#wrapper {
+	font-size: 0.8125em; /*13px*/
+	width: 100%; /*790px*/
+	margin: 0 auto;
+	overflow: hidden;
+	
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -19,37 +25,49 @@ h1 {
 
 h2 {
 	font-family: 'Lobster Two', cursive;
-	font-size: 25px;
+	font-size: 1.923076923em; /*25px*/
 }
 
 h3 {
 	font-family: 'Lobster Two', cursive;
-	font-size: 20px;
+	font-size: 1.538461538em; /*20px*/
 }
+
 
 header {
 	background: white;
 	height: 114px;
+	width: 100%
 }
 
 header img {
 	float: left;
 }
 
+#logo_wrapper {
+	float: left;
+	width: 34.8101266%;
+}
+
+#logo_wrapper img {
+	max-width: 100%;
+}
+
 nav {
-	padding-top: 20px;
+	padding-top: 2.5316456%; /*20px*/
 }
 
 nav ul {
 	list-style-type: none;
-	margin: 15px;
-	padding: 8px;
+	margin: 2.1518987%; /*17px*/
+	padding: 1.0126582%; /*8px*/
 	overflow: hidden;
 }
 
 nav li {
+
 	float: right;
-	margin: 5px;
+	margin: .6329114%; /*5px*/
 }
 
 nav a {
@@ -85,8 +103,10 @@ nav a:active {
 #intro {
 	float: left;
 	background: #fff6e5;
-	padding: 40px 15px;
+	padding: 5.0632911% 1.8987342%; /*40px 15px*/
 	border-top: 1px solid black;
+	width: 100%;
+	overflow: hidden;
 }
 
 
@@ -94,39 +114,73 @@ nav a:active {
 	float: right;
 }
 
-#history {
-	background-image: url(../images/gradientbg.jpg);
+#cta_container {
 	float: right;
-	padding: 15px;
-	clear: right;
-	float: right;
-	width: 513px;
-	border-left: 1px solid black;
-	border-top: 1px solid black;
+	width: 50.6329114%; /*400px*/
+}
+
+#cta_container img {
+	max-width: 100%;
+}
+
+
+#gallery_wrapper1 {
+	width: 78.9473684%; /*75px*/
+}
+
+#gallery_wrapper1 img {
+	max-width: 100%;
+}
+
+#gallery_wrapper2 {
+	width: 78.9473684%; /*75px*/
+}
+
+#gallery_wrapper2 img {
+	max-width: 100%;
+}
+
+#gallery_wrapper3 {
+	width: 78.9473684%; /*75px*/
+}
+
+#gallery_wrapper3 img {
+	max-width: 100%;
+}
+
+#gallery_wrapper4 {
+	width: 78.9473684%; /*75px*/
+}
+
+#gallery_wrapper4 img {
+	max-width: 100%;
 }
 
 aside {
 	background: white;
 	float: left;
-	padding: 15px;
 	border-bottom: 1px solid black;
 	border-top: 1px solid black;
-	height: 505px;
-	width: 216px;
+	width: 27.3417722%; /*216px*/
+	height: 490px;
+	padding: 1.8987342%; /*15px*/
+	overflow: hidden;
+	clear: left;
 }
 
 aside ul {
 	border: 1px dashed #666;
 	list-style-type: none;
-	padding: 2px 5px;
-	margin: 20px auto;
+	padding: .9259259% .9259259% 2.3148148% 2.3148148%; /*2px 2px 5px 5px*/
+	margin: 9.2592593% auto; /*20px*/
 	overflow: hidden;
-	width: 95px;
-	height: 390px;
+	width: 43.9814815%; /*95px*/
+	
 }
 
 aside li {
-	margin: 7px 0px;
+	margin: .8860759% 0; /*7px*/
+	padding: 2.3148148%; /*5px*/
 
 }
 
@@ -143,23 +197,36 @@ aside a:active {
 	border: 5px solid black;
 }
 
+
+#history {
+	background-image: url(../images/gradientbg.jpg);
+	float: left;
+	padding: 1.8987342%; /*15px*/
+	width: 64.9367089%; /*513px*/
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	overflow: hidden;
+}
+
 #health {
 	background: #e7fcfe;
-	padding: 15px;
-	float: right;
-	width: 513px;
-	height: 265px;
+	padding: 1.8987342%; /*15px*/
+	float: left;
+	width: 64.9367089%; /*513px*/
 	border-left: 1px solid black;
 	border-bottom: 1px solid black;
+	overflow: hidden;
 }
+
 
 article {
 	background: white; opacity: .9;
+	padding: 1.8987342%; /*15px*/
 	clear: both;
-	padding: 15px;
 	-moz-column-count: 3;
-	height: 300px;
-}
+	-webkit-column-count: 3;
+	column-count: 3;
+	overflow: hidden;}
 
 article h3 {
 	text-shadow: 3px 2px #dbdddc;
@@ -175,7 +242,7 @@ article h3 {
 }
 
 footer {
-	padding: 5px;
+	padding: .6329114%; /*5px*/
 	background: #e7fcfe;
 	border-top: 1px solid black;
 }
@@ -230,3 +297,28 @@ footer p {
 	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
 	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a'); 
+	
+	
+	
+	
+/* ==========================Media Queries===================== */
+
+/* Tablet Portrait Size to standard 960 (devices and browsers) */
+
+@media screen and (min-width: 768px) and (max-width: 959px){
+	body {background: red;}
+}
+
+/*Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
+@media only screen and (min-width: 480px) and (mad-width: 767px){
+	body {background: red;}
+}
+
+/*Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-device-width: 479px){
+	body {background: red;}
+	#intro img {display: none;}
+	aside {float: none;}
+}
