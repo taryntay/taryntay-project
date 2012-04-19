@@ -1,3 +1,5 @@
+/* ---------------------------Body and Wrapper-------------------------- */
+
 body {
 	color: black;
 	font: 100%/1.5 "Helvetica Neue", Arial, Verdana, sans-serif;
@@ -14,6 +16,8 @@ body {
 	overflow: hidden;
 	
 }
+
+/* ---------------------------Headers-------------------------- */
 
 h1,h2,h3,h4,h5,h6 {
 	margin: 0;
@@ -44,6 +48,7 @@ header img {
 	float: left;
 }
 
+
 #logo_wrapper {
 	float: left;
 	width: 34.8101266%;
@@ -52,6 +57,8 @@ header img {
 #logo_wrapper img {
 	max-width: 100%;
 }
+
+/* ---------------------------Navigation-------------------------- */
 
 nav {
 	padding-top: 2.5316456%; /*20px*/
@@ -100,6 +107,8 @@ nav a:active {
 	color: black;
 }
 
+/* ---------------------------CTA-------------------------- */
+
 #intro {
 	float: left;
 	background: #fff6e5;
@@ -123,6 +132,8 @@ nav a:active {
 	max-width: 100%;
 }
 
+
+/* ---------------------------Gallery-------------------------- */
 
 #gallery_wrapper1 {
 	width: 78.9473684%; /*75px*/
@@ -198,6 +209,8 @@ aside a:active {
 }
 
 
+/* ---------------------------Main Content-------------------------- */
+
 #history {
 	background-image: url(../images/gradientbg.jpg);
 	float: left;
@@ -251,7 +264,44 @@ footer p {
 	text-align: center;
 }
 
+/* ---------------------------Media Queries-------------------------- */
 
+/*Tablet Portrait size up to standard 960 (devices and browsers)*/
+
+@media screen and (min-width: 768px) and (max-width: 959px){
+}
+
+/*Mobile Lanscape size to Tablet Portrait (devices and browsers)*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	nav a {width: 75px; float: left;}
+	aside {width: 100%; float:none; height: auto;}
+	aside ul {border: none; width: auto;}
+	aside li {float: left;}
+	#history {width: 100%; float: none; background-image: none; background-color: #e7fcfe;}
+	#health {width: 100%;}
+	article {	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;}
+}
+
+/*Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
+
+@media only screen and (max-width: 479px){
+	nav a {width: 75px; float: left;}
+	#cta_container {display: none;}
+	aside {width: 100%; float:none; height: auto;}
+	aside ul {border: none; width: 100%;}
+	aside li {float: left;}
+	#history {width: 100%; float: none; background-image: none; background-color: #e7fcfe;}
+	#health {width: 100%;}
+	article {	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;}
+}
+
+
+/* ---------------------------Button-------------------------- */
 
 .button {
 	display: inline-block;
@@ -297,28 +347,3 @@ footer p {
 	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
 	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a'); 
-	
-	
-	
-	
-/* ==========================Media Queries===================== */
-
-/* Tablet Portrait Size to standard 960 (devices and browsers) */
-
-@media screen and (min-width: 768px) and (max-width: 959px){
-	body {background: red;}
-}
-
-/*Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-
-@media only screen and (min-width: 480px) and (mad-width: 767px){
-	body {background: red;}
-}
-
-/*Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-
-@media only screen and (max-device-width: 479px){
-	body {background: red;}
-	#intro img {display: none;}
-	aside {float: none;}
-}
