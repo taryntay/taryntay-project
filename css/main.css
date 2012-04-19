@@ -107,6 +107,7 @@ nav a:active {
 	color: black;
 }
 
+
 /* ---------------------------CTA-------------------------- */
 
 #intro {
@@ -264,11 +265,23 @@ footer p {
 	text-align: center;
 }
 
+footer a {
+	color: black;
+	font-size: .6875em;
+}
+
 /* ---------------------------Media Queries-------------------------- */
 
 /*Tablet Portrait size up to standard 960 (devices and browsers)*/
 
 @media screen and (min-width: 768px) and (max-width: 959px){
+	footer a {display: none;}
+	article {	
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;}
+	#history {background-color: #e7fcfe; background-image: none;}
+
 }
 
 /*Mobile Lanscape size to Tablet Portrait (devices and browsers)*/
@@ -280,7 +293,8 @@ footer p {
 	aside li {float: left;}
 	#history {width: 100%; float: none; background-image: none; background-color: #e7fcfe;}
 	#health {width: 100%;}
-	article {	-moz-column-count: 1;
+	article {	
+	-moz-column-count: 1;
 	-webkit-column-count: 1;
 	column-count: 1;}
 }
@@ -295,7 +309,8 @@ footer p {
 	aside li {float: left;}
 	#history {width: 100%; float: none; background-image: none; background-color: #e7fcfe;}
 	#health {width: 100%;}
-	article {	-moz-column-count: 1;
+	article {	
+	-moz-column-count: 1;
 	-webkit-column-count: 1;
 	column-count: 1;}
 }
