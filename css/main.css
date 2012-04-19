@@ -174,7 +174,7 @@ aside {
 	border-bottom: 1px solid black;
 	border-top: 1px solid black;
 	width: 27.3417722%; /*216px*/
-	height: 490px;
+	height: 500px;
 	padding: 1.8987342%; /*15px*/
 	overflow: hidden;
 	clear: left;
@@ -288,7 +288,7 @@ footer a {
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
 	nav a {width: 75px; float: left;}
-	aside {width: 100%; float:none; height: auto;}
+	aside {width: 100%; float:none; height: 250px;}
 	aside ul {border: none; width: auto;}
 	aside li {float: left;}
 	#history {width: 100%; float: none; background-image: none; background-color: #e7fcfe;}
