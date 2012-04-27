@@ -14,6 +14,7 @@ body {
 	width: 100%; /*790px*/
 	margin: 0 auto;
 	overflow: hidden;
+	background: #e7fcfe;
 	
 }
 
@@ -36,7 +37,6 @@ h3 {
 	font-family: 'Lobster Two', cursive;
 	font-size: 1.538461538em; /*20px*/
 }
-
 
 header {
 	background: white;
@@ -62,28 +62,29 @@ header img {
 
 nav {
 	padding-top: 2.5316456%; /*20px*/
+	width: 100%;
 }
 
 nav ul {
 	list-style-type: none;
-	margin: 2.1518987%; /*17px*/
 	padding: 1.0126582%; /*8px*/
 	overflow: hidden;
 }
 
 nav li {
-
 	float: right;
 	margin: .6329114%; /*5px*/
+	width: 	24.4897959%; /*120px*/
+	padding: .4081633%; /*2px*/
 }
 
 nav a {
 	display: block;
 	background: #55e3f8;
 	color: black;
+	width: auto;
 	height: 20px;
-	width: 120px;
-	padding: 5px;
+	padding: 4.1666667%; /*5px*/
 	text-decoration: none;
 	text-align: center;
 	border-bottom: 2px solid black;
@@ -171,7 +172,6 @@ nav a:active {
 aside {
 	background: white;
 	float: left;
-	border-bottom: 1px solid black;
 	border-top: 1px solid black;
 	width: 27.3417722%; /*216px*/
 	height: 500px;
@@ -228,14 +228,15 @@ aside a:active {
 	float: left;
 	width: 64.9367089%; /*513px*/
 	border-left: 1px solid black;
-	border-bottom: 1px solid black;
 	overflow: hidden;
 }
 
 
 article {
-	background: white; opacity: .9;
+	background: #fff6e5;
 	padding: 1.8987342%; /*15px*/
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 	clear: both;
 	-moz-column-count: 3;
 	-webkit-column-count: 3;
@@ -255,9 +256,79 @@ article h3 {
 	font-weight: bold;
 }
 
-footer {
-	padding: .6329114%; /*5px*/
+/* ---------------------------Table-------------------------- */
+
+#table_wrapper {
+	padding: 1.8987342%; /*15px*/
+	float: left;
+	width: 50%
+}
+
+table {
+	background: #ffd57a;
+	border-collapse: collapse;
+	border: 1px solid black;
+
+}
+
+tr {
+	border: 1px solid black;
+	text-align: center;
+}
+
+td {
+	border: none;
+	padding: .3em;
+}
+
+th {
+	font-family: 'Lobster Two', cursive;
+	font-size: 1.25em; /*16px*/
+	text-align: center;
+	background-color: #55e3f8;
+	padding: .5em;
+	border: 1px solid black;
+}
+
+.odd {
+	background-color: #fff6e5;
+}
+
+/* ---------------------------Form-------------------------- */
+
+#form_wrapper {
+	padding: 1.8987342%; /*15px*/
+	float: inherit;
+}
+
+form {
+	padding: 1.8987342%; /*15px*/
 	background: #e7fcfe;
+}
+
+#submit {
+	float: right;
+	margin-bottom: 1.2658228%; /*10px*/
+}
+
+#person_name {
+	margin-left: 3.2911392%; /*25px*/
+} 
+
+input { 
+	margin: .7594937%; /*6px*/
+} 
+
+input:focus {
+	background: #fff6e5;
+}
+
+/* ---------------------------Footer-------------------------- */
+
+footer {
+	clear: both;
+	padding: .6329114%; /*5px*/
+	background: #fff6e5;
 	border-top: 1px solid black;
 }
 
@@ -268,58 +339,6 @@ footer p {
 footer a {
 	color: black;
 	font-size: .6875em;
-}
-
-/* ---------------------------Media Queries-------------------------- */
-
-/*Tablet Portrait size up to standard 960 (devices and browsers)*/
-
-@media screen and (min-width: 768px) and (max-width: 959px){
-	footer a {display: none;}
-	article {	
-	-moz-column-count: 1;
-	-webkit-column-count: 1;
-	column-count: 1;}
-	#history {background-color: #e7fcfe; background-image: none;}
-
-}
-
-/*Mobile Lanscape size to Tablet Portrait (devices and browsers)*/
-
-@media only screen and (min-width: 480px) and (max-width: 767px){
-	nav a {width: 75px; float: left;}
-	aside {width: 100%; float:none; height: 250px;}
-	aside ul {border: none; width: auto;}
-	aside li {float: left;}
-	#history {width: 100%; float: none; background-image: none; background-color: #e7fcfe;}
-	#health {width: 100%;}
-	article {	
-	-moz-column-count: 1;
-	-webkit-column-count: 1;
-	column-count: 1;}
-	footer a {display: none;}
-	
-}
-
-/*Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
-
-@media only screen and (max-width: 479px){
-	body {background-color: white;}
-	nav {width: 100%; margin: auto; padding: auto; float: left;}
-	nav a {width: 75px; float: left;}
-	#cta_container {display: none;}
-	aside {width: 100%; float:none; height: auto;}
-	aside ul {border: none; width: 100%;}
-	aside li {float: left;}
-	#history {width: 100%; float: none; background-image: none; background-color: #e7fcfe;}
-	#health {width: 100%;}
-	article {	
-	background: #fff6e5; background-opacity: none;
-	-moz-column-count: 1;
-	-webkit-column-count: 1;
-	column-count: 1;}
-	footer a {display: none;}
-
 }
 
 
@@ -369,3 +388,61 @@ footer a {
 	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
 	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a'); 
+}
+
+/* ---------------------------Media Queries-------------------------- */
+
+/*Tablet Portrait size up to standard 960 (devices and browsers)*/
+
+@media screen and (min-width: 768px) and (max-width: 959px){
+	footer a {display: none;}
+	article {	
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;}
+	#history {background-color: #e7fcfe; background-image: none;}
+
+}
+
+/*Mobile Lanscape size to Tablet Portrait (devices and browsers)*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	nav ul{margin: auto;}
+	nav a {width: 75px; float: left;}
+	aside {width: 100%; float:none; height: 250px;}
+	aside ul {border: none; width: auto;}
+	aside li {float: left;}
+	#history {width: 100%; float: none; background-image: none; background-color: #e7fcfe;}
+	#health {width: 100%;}
+	article {	
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;}
+	#form_wrapper {display: none;}
+	#table_wrapper {width: 100%;}
+	footer a {display: none;}
+	
+}
+
+/*Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
+
+@media only screen and (max-width: 479px){
+	body {background-color: white;}
+	nav {width: 100%; margin: auto; padding: auto; float: left;}
+	nav a {width: 75px; float: left;}
+	#cta_container {display: none;}
+	aside {width: 100%; float:none; height: auto;}
+	aside ul {border: none; width: 100%;}
+	aside li {float: left;}
+	#history {width: 100%; float: none; background-image: none; background-color: #e7fcfe;}
+	#health {width: 100%;}
+	article {	
+	background: #fff6e5; background-opacity: none;
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;}
+	#form_wrapper {display: none;}
+	#table_wrapper {width: 100%;}
+	footer a {display: none;}
+
+}
